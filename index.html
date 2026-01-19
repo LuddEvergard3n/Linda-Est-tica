@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Linda Estética - Harmonização facial, rejuvenescimento e contorno corporal com tecnologia de ponta e equipe médica certificada pela ANVISA.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Linda Estética - Realce sua Beleza Natural com Segurança">
+    <meta property="og:description" content="Tratamentos estéticos de alta performance com equipe médica especializada e certificações ANVISA.">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Linda Estética">
+    
+    <title>Linda Estética - Harmonização Facial e Tratamentos Estéticos</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#c9a6a6',
+                        'primary-hover': '#b58d8d',
+                        'accent': '#f1c1c1',
+                        'accent-2': '#d49494',
+                        'accent-3': '#ad7b7b',
+                        'accent-4': '#836161',
+                        'dark-text': '#3b3b3b',
+                        'gray-text': '#9e9e9e',
+                        'light-text': '#ffffff',
+                        'dark-bg': '#312626',
+                        'light-bg': '#fef9f9',
+                        'medium-bg': '#f4e1e1',
+                        'light-border': '#f2d8d8',
+                        'dark-border': '#a88a8a',
+                    },
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        body: ['Nunito', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="bg-light-bg shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <a href="#" class="flex items-center">
+                <img src="images/logo.png" alt="Linda Estética" class="h-20 object-contain">
+            </a>
+
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="#sobre" class="text-dark-text font-body font-semibold hover:text-primary transition-colors">Sobre Nós</a>
+                <a href="#servicos" class="text-dark-text font-body font-semibold hover:text-primary transition-colors">Serviços</a>
+                <a href="#galeria" class="text-dark-text font-body font-semibold hover:text-primary transition-colors">Galeria</a>
+                <a href="#contato" class="text-dark-text font-body font-semibold hover:text-primary transition-colors">Contato</a>
+            </nav>
+
+            <a href="#agendar" class="hidden lg:inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-hover transition-all duration-300 hover:shadow-lg">
+                Agende sua Avaliação
+            </a>
+
+            <button id="mobile-menu-toggle" class="lg:hidden text-dark-text p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="hidden lg:hidden pb-4 space-y-3">
+            <a href="#sobre" class="block py-2 text-dark-text font-body font-semibold hover:text-primary transition-colors">Sobre Nós</a>
+            <a href="#servicos" class="block py-2 text-dark-text font-body font-semibold hover:text-primary transition-colors">Serviços</a>
+            <a href="#galeria" class="block py-2 text-dark-text font-body font-semibold hover:text-primary transition-colors">Galeria</a>
+            <a href="#contato" class="block py-2 text-dark-text font-body font-semibold hover:text-primary transition-colors">Contato</a>
+            <a href="#agendar" class="block w-full text-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-hover transition-all duration-300">
+                Agende sua Avaliação
+            </a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="relative bg-light-bg overflow-hidden" id="home">
+    <div class="absolute inset-0">
+        <img src="images/hero-background.jpg" alt="Beautician wearing gloves carefully applies lip makeup to a relaxed woman lying down" class="w-full h-full object-cover">
+        <div class="absolute inset-0 gradient-overlay"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-light-border shadow-sm">
+                    <i class="fa-solid fa-shield-check text-primary text-lg"></i>
+                    <span class="text-dark-text font-semibold text-sm">Clínica Certificada ANVISA</span>
+                </div>
+
+                <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-dark-text leading-tight">
+                    Realce sua Beleza Natural com Segurança
+                </h1>
+
+                <p class="text-lg sm:text-xl text-gray-text leading-relaxed">
+                    Harmonização facial, rejuvenescimento e contorno corporal com tecnologia de ponta e equipe médica especializada. Resultados naturais que respeitam sua essência.
+                </p>
+
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3">
+                        <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-check text-primary text-sm"></i>
+                        </div>
+                        <span class="text-dark-text font-medium">Procedimentos não invasivos e minimamente invasivos</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-check text-primary text-sm"></i>
+                        </div>
+                        <span class="text-dark-text font-medium">Atendimento personalizado e discreto</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-check text-primary text-sm"></i>
+                        </div>
+                        <span class="text-dark-text font-medium">Resultados comprovados e naturais</span>
+                    </li>
+                </ul>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#agendar" class="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-hover transition-all duration-300 hover:shadow-xl group">
+                        Agende sua Avaliação Gratuita
+                        <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all duration-300 group">
+                        <i class="fa-brands fa-whatsapp text-xl mr-2"></i>
+                        Fale com Especialista
+                    </a>
+                </div>
+
+                <p class="text-sm text-gray-text flex items-center gap-2">
+                    <i class="fa-solid fa-lock text-primary"></i>
+                    Sem compromisso • Avaliação 100% gratuita
+                </p>
+            </div>
+
+            <div class="hidden lg:block"></div>
+        </div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" class="w-full h-auto">
+            <path fill="#f4e1e1" fill-opacity="1" d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="bg-medium-bg py-16 sm:py-24" id="servicos">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
+                NOSSOS SERVIÇOS
+            </p>
+            <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-dark-text mb-4">
+                Tratamentos Estéticos de Alta Performance
+            </h2>
+            <p class="text-lg text-gray-text max-w-3xl mx-auto">
+                Procedimentos seguros e eficazes, personalizados para suas necessidades
+            </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div class="service-card group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-light-border">
+                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent-2 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-face-smile text-white text-2xl"></i>
+                </div>
+                <h3 class="font-heading text-2xl font-bold text-dark-text mb-3">
+                    Harmonização Facial
+                </h3>
+                <p class="text-gray-text mb-6 leading-relaxed">
+                    Técnicas avançadas de preenchimento e modelagem para equilibrar proporções faciais com resultados naturais e harmoniosos.
+                </p>
+                <a href="/servicos" class="inline-flex items-center text-primary font-semibold hover:text-primary-hover transition-colors group/link">
+                    Saiba mais
+                    <i class="fa-solid fa-arrow-right ml-2 text-sm group-hover/link:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <div class="service-card group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-light-border">
+                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-accent-2 to-accent flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-syringe text-white text-2xl"></i>
+                </div>
+                <h3 class="font-heading text-2xl font-bold text-dark-text mb-3">
+                    Toxina Botulínica
+                </h3>
+                <p class="text-gray-text mb-6 leading-relaxed">
+                    Tratamento eficaz para suavizar linhas de expressão e prevenir rugas, com aplicação precisa e segura por profissionais especializados.
+                </p>
+                <a href="/servicos" class="inline-flex items-center text-primary font-semibold hover:text-primary-hover transition-colors group/link">
+                    Saiba mais
+                    <i class="fa-solid fa-arrow-right ml-2 text-sm group-hover/link:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <div class="service-card group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-light-border">
+                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-droplet text-white text-2xl"></i>
+                </div>
+                <h3 class="font-heading text-2xl font-bold text-dark-text mb-3">
+                    Preenchedores Dérmicos
+                </h3>
+                <p class="text-gray-text mb-6 leading-relaxed">
+                    Restabelecimento de volume e contorno facial com ácido hialurônico de alta qualidade para resultados duradouros e naturais.
+                </p>
+                <a href="/servicos" class="inline-flex items-center text-primary font-semibold hover:text-primary-hover transition-colors group/link">
+                    Saiba mais
+                    <i class="fa-solid fa-arrow-right ml-2 text-sm group-hover/link:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <div class="service-card group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-light-border">
+                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-accent-3 to-accent-2 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-sparkles text-white text-2xl"></i>
+                </div>
+                <h3 class="font-heading text-2xl font-bold text-dark-text mb-3">
+                    Rejuvenescimento
+                </h3>
+                <p class="text-gray-text mb-6 leading-relaxed">
+                    Tratamentos avançados de bioestimulação, peelings e laser para renovação celular e melhora da textura da pele.
+                </p>
+                <a href="/servicos" class="inline-flex items-center text-primary font-semibold hover:text-primary-hover transition-colors group/link">
+                    Saiba mais
+                    <i class="fa-solid fa-arrow-right ml-2 text-sm group-hover/link:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <div class="service-card group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-light-border">
+                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent-3 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-person text-white text-2xl"></i>
+                </div>
+                <h3 class="font-heading text-2xl font-bold text-dark-text mb-3">
+                    Contorno Corporal
+                </h3>
+                <p class="text-gray-text mb-6 leading-relaxed">
+                    Procedimentos não invasivos para redução de gordura localizada e modelagem corporal com tecnologia de última geração.
+                </p>
+                <a href="/servicos" class="inline-flex items-center text-primary font-semibold hover:text-primary-hover transition-colors group/link">
+                    Saiba mais
+                    <i class="fa-solid fa-arrow-right ml-2 text-sm group-hover/link:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <div class="service-card group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-light-border">
+                <div class="w-16 h-16 rounded-full bg-gradient-to-br from-accent-2 to-accent-4 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-leaf text-white text-2xl"></i>
+                </div>
+                <h3 class="font-heading text-2xl font-bold text-dark-text mb-3">
+                    Dermatologia Estética
+                </h3>
+                <p class="text-gray-text mb-6 leading-relaxed">
+                    Tratamentos dermatológicos especializados para saúde e beleza da pele, incluindo manchas, acne e cicatrizes.
+                </p>
+                <a href="/servicos" class="inline-flex items-center text-primary font-semibold hover:text-primary-hover transition-colors group/link">
+                    Saiba mais
+                    <i class="fa-solid fa-arrow-right ml-2 text-sm group-hover/link:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="/servicos" class="inline-flex items-center px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-hover transition-all duration-300 hover:shadow-lg group">
+                Ver Todos os Serviços
+                <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- POR QUE ESCOLHER -->
+<section class="bg-light-bg py-16 sm:py-24" id="sobre">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="col-span-2 relative h-64 sm:h-80 rounded-2xl overflow-hidden shadow-lg">
+                        <img src="images/porque-escolher.jpg" alt="Patient relaxes on a comfortable treatment bed while a skilled practitioner applies dermal filler" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="relative h-48 rounded-2xl overflow-hidden shadow-lg">
+                        <img src="images/grid1.jpg" alt="A woman receives an anti-aging cosmetic injection near the eye" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="relative h-48 rounded-2xl overflow-hidden shadow-lg">
+                        <img src="images/grid2.jpg" alt="A cosmetologist uses a microcurrent massager on a client's forehead" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div class="absolute bottom-4 right-4 bg-primary text-white rounded-2xl p-6 shadow-xl">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold font-heading">15+</div>
+                        <div class="text-sm font-semibold">Anos de</div>
+                        <div class="text-sm font-semibold">Experiência</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+                <div>
+                    <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
+                        POR QUE ESCOLHER A LINDA ESTÉTICA?
+                    </p>
+                    <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-dark-text mb-4">
+                        Excelência, Segurança e Resultados Naturais
+                    </h2>
+                    <p class="text-lg text-gray-text leading-relaxed">
+                        Nossa clínica combina tecnologia de ponta, equipe médica altamente qualificada e um ambiente acolhedor para proporcionar a melhor experiência em estética.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="feature-item flex gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-user-doctor text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-dark-text text-lg mb-1">
+                                Equipe Médica Especializada
+                            </h3>
+                            <p class="text-gray-text leading-relaxed">
+                                Profissionais certificados e em constante atualização com as últimas técnicas internacionais
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item flex gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-certificate text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-dark-text text-lg mb-1">
+                                Certificações e Padrões ANVISA
+                            </h3>
+                            <p class="text-gray-text leading-relaxed">
+                                Todos os procedimentos seguem rigorosos protocolos de segurança e normas regulatórias
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item flex gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-laptop-medical text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-dark-text text-lg mb-1">
+                                Tecnologia de Última Geração
+                            </h3>
+                            <p class="text-gray-text leading-relaxed">
+                                Equipamentos modernos importados e produtos de alta qualidade comprovados cientificamente
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item flex gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-heart text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-dark-text text-lg mb-1">
+                                Atendimento Personalizado
+                            </h3>
+                            <p class="text-gray-text leading-relaxed">
+                                Cada paciente recebe um plano de tratamento único, desenvolvido para suas necessidades específicas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contato" class="inline-flex items-center px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-hover transition-all duration-300 hover:shadow-lg group">
+                    Conheça Nossa Clínica
+                    <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA DE CONVERSÃO -->
+<section class="bg-gradient-to-br from-primary to-accent-2 py-16 sm:py-24" id="agendar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-white space-y-6">
+                <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+                    Pronta para Transformar sua Autoestima?
+                </h2>
+                <p class="text-lg text-white/90 leading-relaxed">
+                    Agende sua avaliação gratuita com nossa equipe médica e descubra os melhores tratamentos personalizados para você.
+                </p>
+
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3">
+                        <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-check text-white text-sm"></i>
+                        </div>
+                        <span class="text-white/95 font-medium">Avaliação completa sem compromisso</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-check text-white text-sm"></i>
+                        </div>
+                        <span class="text-white/95 font-medium">Plano de tratamento personalizado</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-check text-white text-sm"></i>
+                        </div>
+                        <span class="text-white/95 font-medium">Resposta rápida em até 24h</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 sm:p-10 shadow-2xl">
+                <div class="text-center mb-8">
+                    <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa-solid fa-calendar-check text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-dark-text mb-2">
+                        Agende Agora
+                    </h3>
+                    <p class="text-gray-text">
+                        Entre em contato e dê o primeiro passo
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <a href="#contato" class="block w-full text-center px-6 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-hover transition-all duration-300 hover:shadow-lg">
+                        <i class="fa-solid fa-calendar-plus mr-2"></i>
+                        Agendar Avaliação Gratuita
+                    </a>
+
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-6 py-4 bg-[#25D366] text-white font-bold rounded-lg hover:bg-[#20BA5A] transition-all duration-300 hover:shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-xl mr-2"></i>
+                        Falar no WhatsApp
+                    </a>
+
+                    <div class="flex items-center gap-4 my-6">
+                        <div class="flex-1 h-px bg-light-border"></div>
+                        <span class="text-gray-text text-sm">ou</span>
+                        <div class="flex-1 h-px bg-light-border"></div>
+                    </div>
+
+                    <a href="tel:+551112345678" class="flex items-center justify-center gap-3 text-dark-text hover:text-primary transition-colors font-semibold">
+                        <i class="fa-solid fa-phone text-primary"></i>
+                        <span>(11) 1234-5678</span>
+                    </a>
+                </div>
+
+                <p class="text-center text-sm text-gray-text mt-6 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-shield-check text-primary"></i>
+                    Seus dados estão seguros conosco
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-light-bg py-16 sm:py-24" id="faq">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
+                PERGUNTAS FREQUENTES
+            </p>
+            <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-dark-text mb-4">
+                Suas Dúvidas Respondidas
+            </h2>
+            <p class="text-lg text-gray-text">
+                Informações importantes sobre segurança, resultados e procedimentos
+            </p>
+        </div>
+
+        <div class="space-y-4 mb-12">
+            <div class="bg-white rounded-xl border border-light-border shadow-sm overflow-hidden">
+                <button class="faq-question w-full flex items-center justify-between p-6 text-left hover:bg-light-bg/50 transition-colors">
+                    <span class="font-bold text-dark-text text-lg pr-4">
+                        Os procedimentos são seguros?
+                    </span>
+                    <i class="fa-regular fa-chevron-down text-primary text-xl transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                    <div class="p-6 pt-0 text-gray-text leading-relaxed">
+                        Sim, todos os nossos procedimentos seguem rigorosos protocolos de segurança e são realizados por profissionais médicos especializados e certificados. Utilizamos apenas produtos aprovados pela ANVISA e equipamentos de última geração. A segurança do paciente é nossa prioridade máxima.
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl border border-light-border shadow-sm overflow-hidden">
+                <button class="faq-question w-full flex items-center justify-between p-6 text-left hover:bg-light-bg/50 transition-colors">
+                    <span class="font-bold text-dark-text text-lg pr-4">
+                        Quanto tempo duram os resultados?
+                    </span>
+                    <i class="fa-regular fa-chevron-down text-primary text-xl transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                    <div class="p-6 pt-0 text-gray-text leading-relaxed">
+                        A duração dos resultados varia conforme o tipo de procedimento. Toxina botulínica dura em média 4-6 meses, preenchedores dérmicos de 12 a 18 meses, e tratamentos de bioestimulação podem ter efeitos prolongados. Durante a consulta, explicamos detalhadamente a durabilidade esperada para seu tratamento específico.
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl border border-light-border shadow-sm overflow-hidden">
+                <button class="faq-question w-full flex items-center justify-between p-6 text-left hover:bg-light-bg/50 transition-colors">
+                    <span class="font-bold text-dark-text text-lg pr-4">
+                        Os procedimentos são dolorosos?
+                    </span>
+                    <i class="fa-regular fa-chevron-down text-primary text-xl transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                    <div class="p-6 pt-0 text-gray-text leading-relaxed">
+                        A maioria dos procedimentos causa apenas um desconforto mínimo. Utilizamos técnicas de anestesia local e produtos com anestésicos incorporados para maximizar seu conforto durante o tratamento. Nossos profissionais são treinados em técnicas que minimizam a dor e o desconforto.
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl border border-light-border shadow-sm overflow-hidden">
+                <button class="faq-question w-full flex items-center justify-between p-6 text-left hover:bg-light-bg/50 transition-colors">
+                    <span class="font-bold text-dark-text text-lg pr-4">
+                        Qual é o tempo de recuperação?
+                    </span>
+                    <i class="fa-regular fa-chevron-down text-primary text-xl transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                    <div class="p-6 pt-0 text-gray-text leading-relaxed">
+                        Os procedimentos não invasivos e minimamente invasivos que oferecemos têm tempo de recuperação muito curto. Na maioria dos casos, você pode retornar às atividades normais no mesmo dia ou no dia seguinte. Pode haver leve vermelhão ou inchaço temporário, que geralmente desaparece em 24-48 horas.
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl border border-light-border shadow-sm overflow-hidden">
+                <button class="faq-question w-full flex items-center justify-between p-6 text-left hover:bg-light-bg/50 transition-colors">
+                    <span class="font-bold text-dark-text text-lg pr-4">
+                        Como funciona a primeira consulta?
+                    </span>
+                    <i class="fa-regular fa-chevron-down text-primary text-xl transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                    <div class="p-6 pt-0 text-gray-text leading-relaxed">
+                        A primeira consulta é gratuita e sem compromisso. Durante o atendimento, nosso médico especialista avalia suas necessidades, histórico de saúde, expectativas e recomenda os tratamentos mais adequados. Você recebe um plano personalizado com informações detalhadas sobre procedimentos, resultados esperados e investimento necessário.
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl border border-light-border shadow-sm overflow-hidden">
+                <button class="faq-question w-full flex items-center justify-between p-6 text-left hover:bg-light-bg/50 transition-colors">
+                    <span class="font-bold text-dark-text text-lg pr-4">
+                        Quais são as formas de pagamento?
+                    </span>
+                    <i class="fa-regular fa-chevron-down text-primary text-xl transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                    <div class="p-6 pt-0 text-gray-text leading-relaxed">
+                        Aceitamos diversas formas de pagamento para sua comodidade: dinheiro, cartões de crédito e débito, PIX e parcelamento em até 12x sem juros (consulte condições). Durante a consulta, apresentamos todas as opções disponíveis para seu tratamento.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            <p class="text-gray-text mb-4">Ainda tem dúvidas?</p>
+            <a href="#contato" class="inline-flex items-center px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-hover transition-all duration-300 hover:shadow-lg group">
+                Entre em Contato
+                <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FORMULÁRIO DE CONTATO -->
+<section class="bg-white py-16 sm:py-24" id="contato">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <p class="text-primary font-semibold text-sm uppercase tracking-wider mb-3">
+                ENTRE EM CONTATO
+            </p>
+            <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-dark-text mb-4">
+                Estamos Aqui Para Você
+            </h2>
+            <p class="text-lg text-gray-text">
+                Preencha o formulário abaixo e nossa equipe entrará em contato em até 24 horas
+            </p>
+        </div>
+
+        <div class="bg-light-bg rounded-2xl p-8 sm:p-12 shadow-lg">
+            <!-- 
+                FORMSPREE - Serviço de formulários gratuito
+                
+                COMO CONFIGURAR:
+                1. Acesse: https://formspree.io
+                2. Crie uma conta gratuita
+                3. Crie um novo formulário
+                4. Copie o ID do formulário (ex: xpznqwer)
+                5. Substitua "SEU_FORM_ID" abaixo pelo ID real
+                
+                Exemplo: action="https://formspree.io/f/xpznqwer"
+                
+                ALTERNATIVA: FormSubmit
+                Substitua a action por:
+                action="https://formsubmit.co/seu-email@exemplo.com"
+            -->
+            <form 
+                action="https://formspree.io/f/SEU_FORM_ID" 
+                method="POST"
+                class="space-y-6"
+            >
+                <!-- Nome -->
+                <div>
+                    <label for="name" class="block text-dark-text font-semibold mb-2">
+                        Nome Completo <span class="text-red-500">*</span>
+                    </label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        required
+                        class="w-full px-4 py-3 border border-light-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                        placeholder="Digite seu nome completo"
+                    >
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block text-dark-text font-semibold mb-2">
+                        Email <span class="text-red-500">*</span>
+                    </label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required
+                        class="w-full px-4 py-3 border border-light-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                        placeholder="seuemail@exemplo.com"
+                    >
+                </div>
+
+                <!-- Telefone -->
+                <div>
+                    <label for="phone" class="block text-dark-text font-semibold mb-2">
+                        Telefone/WhatsApp <span class="text-red-500">*</span>
+                    </label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        required
+                        class="w-full px-4 py-3 border border-light-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+                        placeholder="(11) 99999-9999"
+                    >
+                </div>
+
+                <!-- Mensagem -->
+                <div>
+                    <label for="message" class="block text-dark-text font-semibold mb-2">
+                        Mensagem <span class="text-red-500">*</span>
+                    </label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        required
+                        rows="5"
+                        class="w-full px-4 py-3 border border-light-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
+                        placeholder="Conte-nos sobre o que você está procurando..."
+                    ></textarea>
+                </div>
+
+                <!-- Botão Enviar -->
+                <div>
+                    <button 
+                        type="submit" 
+                        class="w-full px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-hover transition-all duration-300 hover:shadow-lg flex items-center justify-center gap-2"
+                    >
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Enviar Mensagem</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark-bg text-light-text">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div class="space-y-6">
+                <img src="images/logo.png" alt="Linda Estética" class="h-24 object-contain">
+                <p class="text-light-text/80 leading-relaxed">
+                    Clínica de estética avançada especializada em tratamentos faciais e corporais, com foco em resultados naturais e seguros.
+                </p>
+                <div class="flex gap-3">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-all duration-300">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-all duration-300">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-all duration-300">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="font-heading text-lg font-bold mb-4">Links Rápidos</h3>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="text-light-text/80 hover:text-primary transition-colors inline-block">Home</a></li>
+                    <li><a href="#sobre" class="text-light-text/80 hover:text-primary transition-colors inline-block">Sobre Nós</a></li>
+                    <li><a href="#servicos" class="text-light-text/80 hover:text-primary transition-colors inline-block">Serviços</a></li>
+                    <li><a href="#galeria" class="text-light-text/80 hover:text-primary transition-colors inline-block">Galeria</a></li>
+                    <li><a href="#" class="text-light-text/80 hover:text-primary transition-colors inline-block">Depoimentos</a></li>
+                    <li><a href="/blog" class="text-light-text/80 hover:text-primary transition-colors inline-block">Blog</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-heading text-lg font-bold mb-4">Serviços</h3>
+                <ul class="space-y-2">
+                    <li><a href="/servicos#harmonizacao" class="text-light-text/80 hover:text-primary transition-colors inline-block">Harmonização Facial</a></li>
+                    <li><a href="/servicos#botox" class="text-light-text/80 hover:text-primary transition-colors inline-block">Toxina Botulínica</a></li>
+                    <li><a href="/servicos#preenchedores" class="text-light-text/80 hover:text-primary transition-colors inline-block">Preenchedores Dérmicos</a></li>
+                    <li><a href="/servicos#rejuvenescimento" class="text-light-text/80 hover:text-primary transition-colors inline-block">Rejuvenescimento</a></li>
+                    <li><a href="/servicos#contorno" class="text-light-text/80 hover:text-primary transition-colors inline-block">Contorno Corporal</a></li>
+                    <li><a href="#faq" class="text-light-text/80 hover:text-primary transition-colors inline-block">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-heading text-lg font-bold mb-4">Contato</h3>
+                <ul class="space-y-4 text-light-text/80">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot text-primary mt-1 flex-shrink-0"></i>
+                        <span>
+                            Rua Exemplo, 123<br />
+                            São Paulo, SP<br />
+                            01234-567
+                        </span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-primary flex-shrink-0"></i>
+                        <a href="tel:+551112345678" class="hover:text-primary transition-colors">
+                            (11) 1234-5678
+                        </a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-primary flex-shrink-0"></i>
+                        <a href="/cdn-cgi/l/email-protection#53303c3d2732273c133f3a3d373236202736273a30327d303c3e7d3121" class="hover:text-primary transition-colors">
+                            <span class="__cf_email__" data-cfemail="2744484953465348674b4e49434642545342534e44460944484a094555">[email&#160;protected]</span>
+                        </a>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-clock text-primary mt-1 flex-shrink-0"></i>
+                        <span>
+                            Seg - Sex: 9h às 19h<br />
+                            Sáb: 9h às 14h
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pt-8 border-t border-white/10">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-light-text/60">
+                <p>© 2026 Linda Estética. Todos os direitos reservados.</p>
+                <div class="flex gap-6">
+                    <a href="/politica-privacidade" class="hover:text-primary transition-colors">
+                        Política de Privacidade
+                    </a>
+                    <a href="/termos-uso" class="hover:text-primary transition-colors">
+                        Termos de Uso
+                    </a>
